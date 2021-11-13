@@ -1,9 +1,9 @@
 FROM alpine:latest
 MAINTAINER Marcio Bigolin <marcio.bigolinn@gmail.com>
-LABEL Description="Uma pequena imagem para você testar o poder do Eyalius"
+LABEL Description="Uma pequena, nem tanto assim (sic), imagem para você testar o poder do Eyalius"
 
 RUN apk --update add apache2 apache2-ssl \
-          curl rsync openssh lftp \
+          curl rsync openssh lftp nodejs\
           php7 php7-apache2 php7-curl php7-json php7-openssl php7-simplexml php7-xml php7-dom \
           php7-gd php7-xdebug php7-session php7-pdo_pgsql php7-pdo_mysql php7-mbstring
 
